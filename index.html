@@ -24,11 +24,11 @@
      <div class="p-2">
         <button id="menub" class="block justify-between"><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
       <div class="hidden bg-white" id="menu">
-        <ul>
+         <ul>
             <li><a href="#" class="block hover:bg-blue-500 p-2">My UNI Account</a></li>
             <li><a href="#" class="block hover:bg-blue-500 p-2">Portal</a></li>
-            <li><a href="#" class="block hover:bg-blue-500 p-2">Language</a></li>
-                <li><a href="#" class="block hover:bg-blue-500 px-4 py-2">English</a>
+            <li><a href="#" class="block hover:bg-blue-500 p-2" id="slang">Language</a></li>
+                <li class="hidden" id="lang"><a href="#" class="block hover:bg-blue-500 px-4 py-2">English</a>
                   <a href="#" class="block hover:bg-blue-500 px-4 py-2">عربي</a></li>
             <li><a href="#" class="block hover:bg-blue-500 p-2">Contact</a></li>
         </ul>
@@ -36,12 +36,20 @@
     </div>
 
     <script>
-      
+     //menu button click 
       const button = document.querySelector('#menub'); // Hamburger Icon
       const menu = document.querySelector('#menu'); // Menu
 
          button.addEventListener('click', () => {
          menu.classList.toggle('hidden');
+         });
+
+      //Language select button
+      const button2 = document.querySelector('#slang'); // Hamburger Icon
+      const menu2 = document.querySelector('#lang'); // Menu
+
+         button2.addEventListener('click', () => {
+         menu2.classList.toggle('hidden');
          });
     </script>
     <!--endnav-->
