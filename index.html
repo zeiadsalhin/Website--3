@@ -10,29 +10,23 @@
 </head>
 <body>
  <!--Top-->
- <div class=" p-4 justify-between bg-blue-200 font-semibold ">
-
- <!--left-->
- <div class="flex md:justify-between items-center text-blue-800">
-    <img src="logo.jpeg" width="70" class="mr-2" alt="logo">
-    <a href="" class="inline-block p-2 hover:bg-blue-500 hover:text-white">Home</a>
-    <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="inline-block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
-  
-
-  <!--Right-->
-<!--nav-->
-        <button id="menub" class="block md:hidden justify-between"><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
-      <div class="hidden bg-white rounded p-1" id="menu">
-        <ul class="block">
-            <li><a href="us.html" class="block hover:bg-blue-500 p-2">My UNI Account</a></li>
-            <li><a href="#" class="block hover:bg-blue-500 p-2" id="slang">Language</a></li>
-                <li class="hidden" id="lang"><a href="#" class="block hover:bg-blue-500 px-4 py-2">English</a>
-                  <a href="indexar.html" class="block hover:bg-blue-500 px-4 py-2">عربي</a></li>
-            <li><a href="contact.html" class="block hover:bg-blue-500 p-2">Contact</a></li>
-        </ul>
-      </div>
-    
+ <nav class=" p-4 justify-between bg-blue-200 font-semibold ">
  
+  <div class="flex justify-between">
+    <img src="logo.jpeg" width="60" class="justify-between" alt="logo">
+    <button id="menub" class="  justify-between"><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
+      
+  </div>
+      <div class=" hidden mt-2 px-2 justify-around bg-white rounded p-1" id="menu">
+        <a href="us.html" class="block hover:bg-blue-500 p-2">My UNI Account</a>
+        <a href="" class="block p-2 hover:bg-blue-500 hover:text-white">Home</a>
+        <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="inline-block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
+        <a href="#" class="block hover:bg-blue-500 p-2" id="slang">Language</a>
+            <div class="hidden" id="lang"><a href="indexar.html" class="block hover:bg-blue-500 px-4 py-2">عربي</a></div>
+        <a href="contact.html" class="block hover:bg-blue-500 p-2">Contact</a>
+      </div>
+            
+ </nav> 
  <!--nav desktop-->
  <!--nav class="">
   <a href="us.html" class=" hover:bg-blue-500 ">My UNI Account</a>
@@ -44,7 +38,7 @@
       <li><a href="indexar.html" class="block p-2">عربي</a></li></div>
     </ul>
  </nav-->
- <nav class="hidden lg:block">
+ <nav class="hidden">
  
   <a href="us.html" class=" hover:bg-blue-500 px-2 ">My UNI Account</a>
   <a href="contact.html" class=" hover:bg-blue-500 px-2">Contact</a>
@@ -52,9 +46,9 @@
  
 
  </nav>
-</div>
+
 <!--Main-->
- <div class=" py-4 ">
+ <div class=" p-4 bg-blue-200 ">
   <ul>
     <li>.</li>
     <li>.</li>
@@ -73,7 +67,7 @@
     <li>.</li>
   </ul>
 
- </div>
+ 
  <!--footer-->
 <div class=" bg-blue-500">
   <div class="p-10 font-semibold flex justify-between ">
@@ -129,7 +123,7 @@
          menu2.classList.toggle('hidden');
          });
          //lang selector
-         const button3 = document.querySelector('#langs'); // Hamburger Icon
+      const button3 = document.querySelector('#langs'); // Hamburger Icon
       const menu3 = document.querySelector('#langd'); // Menu
 
          button3.addEventListener('click', () => {
@@ -139,7 +133,7 @@
     <!--endnav-->
     <!--loadmsg-->
     <!--script type="text/javascript">
-        alert('Website is under development, if you have any Questions please contact me 😊')</script>
+        alert('Website is under development, if you have any Questions please contact me 😊')</script-->
   </div>
 </div>
     
