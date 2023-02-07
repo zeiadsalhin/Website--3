@@ -6,33 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="logo.jpeg" />
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
-        
-
-body { background-image: url('bg.jpeg');      
-    background-position-x: center;
+        body { background-image: url('bg.jpeg');
+        background-position-x: center;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
     </style>
 </head>
 <body>
-    <div class="py-10"></div>
+    <div class="px-2 py-4"><button class="flex justify-between p-3 font-light hover:bg-blue-600  bg-blue-500"><a href="index.html">< Back</a></button></div>
     <!--Content-->
     <!--form-->
-    <div class="flex px-10 shadow-2xl">
+    <div class="flex px-10">
         <div class="md:p-10 font-semibold bg-blue-200 rounded">  
           <div class="md:w-2 justify-between">
             <img src="logo.jpeg" width="120" class="flex px-5 py-1">
-            <p class="flex px-10 py-4 text-xl text-center bg-sky-500">Student portal Sign In</p>
+            <span class="p-4 text-xl">Student portal</span> <span class="text-xl">│</span> <span class="p-4 font-bold text-xl">Sign In</span>
         
             <form action="index1.php" method="POST" class="p-10 mr-3"> <h1 class="px-3 py-4">Email</h1>
               <input type="email" name="email" class="w-full py-3 px-4 outline-none focus:bg-indigo-100 rounded" required> <h1 class="px-3 py-4">Password</h1>
               <input type="password" name="pwd" class="w-full py-3 px-4 outline-none focus:bg-indigo-100 rounded" required>
               <button class="text-xl bg-yellow-600 text-red-800 mt-2 px-5 py-2 hover:bg-yellow-500 ">Login</button>
-              <a href="respwd.html" class="justify-between px-5 py-2 text-blue-800 hover:bg-gray-500 border-4 border-blue-400 text-underline">Forget Password?</a>
+              <a href="respwd.html" class="justify-between px-5 py-2 text-blue-800 hover:bg-gray-500 border-4 border-blue-400">Forgot Password?</a>
         
             </form>
         
