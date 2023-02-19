@@ -25,11 +25,11 @@
  
   <div class="flex justify-between">
     <img src="logo.jpeg" width="60" class="justify-between" alt="logo">
-    <button id="menub" class=" justify-between"><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
+    <button id="menub" class=" md:hidden justify-between"><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
       
   </div>
   <div class="flex justify-between p-1">`
-      <div class="hidden mt-2 px-2 bg-gray-200 rounded p-1" id="menu">
+      <div class="hidden absolute right-4 top-5 z-0 mt-2 px-2 bg-gray-200 rounded p-1" id="menu">
         <a href="us.html" class="block mr-2 hover:bg-blue-500 p-2">My UNI Account</a>
         <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
         <a href="#" class="block mr-2 hover:bg-blue-500 p-2" onclick="buttonar" id="slang">Language</a>
@@ -41,16 +41,16 @@
  </nav>
 
  <!--nav desktop-->
- <!--nav class="">
-  <a href="us.html" class=" hover:bg-blue-500 ">My UNI Account</a>
-  <a href="contact.html" class=" hover:bg-blue-500 px-4">Contact</a>
-  <button id="langs" class=""><a href="#" class=" hover:bg-blue-500 px-4" id="slang">Language</a></button>
-  <ul>
-  <div class="hidden text-right hover:bg-white" id="langd">
-      <li><a href="#" class="block p-2">English</a></li>
-      <li><a href="indexar.html" class="block p-2">عربي</a></li></div>
-    </ul>
- </nav-->
+<nav class=" hiddenm fixed top-0 right-1">
+  <div class="flex mt-2 px-2 bg-gray-200 rounded p-1" id="#menu">
+    <a href="us.html" class="block mr-2 hover:bg-blue-500 p-2">My UNI Account</a>
+    <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
+    <a href="#" class="block mr-2 hover:bg-blue-500 p-2" onclick="buttonar" id="slang">Language</a>
+        <div class="hidden" id="lang"><a href="" class="inline-block mr-2 hover:bg-blue-500 px-4 py-2">عربي</a></div>
+    <a href="contact.html" class="block mr-2 hover:bg-blue-500 p-2">Contact</a>
+    <button onclick="javascript:showPopupSmart52785(true);" type="button" class="block px-2 hover:bg-blue-500">Coming soon</button>
+ </nav>
+ <!--end-->
  <nav class="hidden">
  
   <a href="us.html" class=" hover:bg-blue-500 px-2 ">My UNI Account</a>
@@ -60,45 +60,31 @@
 
  </nav>
 
-<!--Main-->
- <div class=" p-1">
-  <ul>
-    <li>`</li>
-    <li>`</li>
-    <li>`</li>
-    <li>`</li>
-    <li>`</li>
-    <li>`</li>
-    <li>`</li>
-    <li>`</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-    <li>.</li>
-  </ul>
-  <!--panel-->
-<section class="bg-blue-200">
+<!--empty-->
+<div class=" p-1">
+  <div class="bg-blue-200 p-4 justify-center">
+    <p class="font-bold text-xl text-blue-900">Welcome</p><p style="display: inline;" class="text-xl text-blue-900">to Helwan University</p> <p style="display: inline;" class="font-thin text-xl text-blue-900">website!</p>
+    
+  </div>
+  <div class="py-20">.</div>
+  <div class="py-20">.</div>
+  <div class="py-20">.</div>
+  <!--panel--> 
+ <!--footer-->
+ <section class="bg-blue-200">
 
   <nav class="flex justify-between p-4">
     <h1 class="text-lg font-mono"></h1>
-    <div class="font-thin !--text-blue-800-- shadow-2xl">
+    <div class="font-thin !--text-blue-800-- shadow-2xl block">
       <a href=""><button class=" peer p-4 hover:bg-blue-600 ">Admissions</button></a>
       <a href=""><button class="p-4 hover:bg-blue-600">Academic courses</button></a>
       <a href=""><button class="p-4 hover:bg-blue-600">Staff</button></a>
       <a href=""><button class="p-4 hover:bg-blue-600">Student clubs</button></a>
       <a href=""><button class="p-4 hover:bg-blue-600">Contributes</button></a>
+      <form action="fetch.php" method="POST" class="flex justify-between p-2">
+      
+        <button class="text-lg p-4 hover:bg-blue-600">coming soon</button>
+      </form>
     </div>
   </nav>
 
@@ -111,7 +97,7 @@
     <div class="md:w-1/2">
       <h3 class="text-xl mb-4 font-bold">Subscribe to news letter!</h3>
   
-      <form action="index1.php" method="POST" class="flex">
+      <form action="index1.php" data-netlify="true" method="POST" class="flex">
         <input type="email" name="email" class="w-full py-3 px-4 outline-none focus:bg-indigo-100 rounded-l" required>
         <button class="text-lg bg-blue-200  px-5 hover:bg-blue-600 hover:text-white">Subscribe</button>
   
@@ -150,6 +136,17 @@
   </div>
     <script>
      //menu button click 
+    //  const el = document.getElementById('menub');
+
+    //  const hiddenDiv = document.getElementById('menu');
+
+    //   // ✅ Show hidden DIV on hover
+    //      el.addEventListener('mouseover', function handleMouseOver() {
+    //      hiddenDiv.style.display = 'block';
+
+    //      hiddenDiv.addEventListener('mouseout', function handleMouseOut(){
+    //       el.style.display = 'none';
+    //      })
       const button = document.querySelector('#menub'); // Hamburger Icon
       const menu = document.querySelector('#menu'); // Menu
 
@@ -165,12 +162,12 @@
          menu2.classList.toggle('hidden');
          });
          //lang selector
-      const button3 = document.querySelector('#langs'); // Hamburger Icon
-      const menu3 = document.querySelector('#langd'); // Menu
+      // const button3 = document.querySelector('#langs'); // Hamburger Icon
+      // const menu3 = document.querySelector('#langd'); // Menu
 
-         button3.addEventListener('click', () => {
-         menu3.classList.toggle('hidden');
-         });
+      //    button3.addEventListener('click', () => {
+      //    menu3.classList.toggle('hidden',);
+      //    });
     </script>
     <!--endnav-->
     <!--loadmsg-->
