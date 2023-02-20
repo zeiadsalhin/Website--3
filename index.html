@@ -25,11 +25,12 @@
  
   <div class="flex justify-between">
     <img src="logo.jpeg" width="60" class="justify-between" alt="logo">
-    <button id="menub" class=" md:hidden justify-between"><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
+    <button id="menub" class=" md:hidden justify-between "><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
       
   </div>
   <div class="flex justify-between p-1">`
-      <div class="hidden absolute right-4 top-5 z-0 mt-2 px-2 bg-gray-200 rounded p-1" id="menu">
+      <div class="hidden transition ease-in duration-500 absolute right-4 top-5 z-0 mt-2 px-2 bg-gray-200 rounded p-1" id="menu">
+        <i id="exit" class="fa-solid fa-x fa-lg absolute right-0.5 top-2.5"></i>
         <a href="us.html" class="block mr-2 hover:bg-blue-500 p-2">My UNI Account</a>
         <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
         <a href="#" class="block mr-2 hover:bg-blue-500 p-2" onclick="buttonar" id="slang">Language</a>
@@ -42,16 +43,16 @@
 
  <!--nav desktop-->
 <nav class=" hiddenm fixed top-0 right-1">
-  <div class="flex mt-2 px-2 bg-gray-200 rounded p-1" id="#menu">
-    <a href="us.html" class="block mr-2 hover:bg-blue-500 p-2">My UNI Account</a>
+  <div class="flex mt-2 px-2 bg-gray-200  rounded p-1" id="#menu">
+    <a href="us.html" class="block mr-2 hover:bg-blue-500 hover:text-white p-2">My UNI Account</a>
     <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
-    <a href="#" class="block mr-2 hover:bg-blue-500 p-2" onclick="buttonar" id="slang">Language</a>
-        <div class="hidden" id="lang"><a href="" class="inline-block mr-2 hover:bg-blue-500 px-4 py-2">عربي</a></div>
-    <a href="contact.html" class="block mr-2 hover:bg-blue-500 p-2">Contact</a>
-    <button onclick="javascript:showPopupSmart52785(true);" type="button" class="block px-2 hover:bg-blue-500">Coming soon</button>
+    <a href="#" class="block mr-2 hover:bg-blue-500 hover:text-white p-2" onclick="buttonar" id="slang">Language</a>
+        <div class="hidden" id="lang"><a href="" class="inline-block mr-2 hover:bg-blue-500 hover:text-white px-4 py-2">عربي</a></div>
+    <a href="contact.html" class="block mr-2 hover:bg-blue-500 hover:text-white p-2">Contact</a>
+    <button onclick="javascript:showPopupSmart52785(true);" type="button" class="block px-2 hover:bg-blue-500 hover:text-white transform hover:rotate-12 ease-in-out duration-500">Coming soon</button>
  </nav>
  <!--end-->
- <nav class="hidden">
+ <nav class="hidden hover:text-white">
  
   <a href="us.html" class=" hover:bg-blue-500 px-2 ">My UNI Account</a>
   <a href="contact.html" class=" hover:bg-blue-500 px-2">Contact</a>
@@ -76,11 +77,11 @@
   <nav class="flex justify-between p-4">
     <h1 class="text-lg font-mono"></h1>
     <div class="font-thin !--text-blue-800-- shadow-2xl block">
-      <a href=""><button class=" peer p-4 hover:bg-blue-600 ">Admissions</button></a>
-      <a href=""><button class="p-4 hover:bg-blue-600">Academic courses</button></a>
-      <a href=""><button class="p-4 hover:bg-blue-600">Staff</button></a>
-      <a href=""><button class="p-4 hover:bg-blue-600">Student clubs</button></a>
-      <a href=""><button class="p-4 hover:bg-blue-600">Contributes</button></a>
+      <a href=""><button class=" peer p-4 hover:text-white transform hover:scale-90 ease-out duration-500 hover:bg-blue-500">Admissions</button></a>
+      <a href=""><button class="p-4 hover:text-white transform hover:scale-90 ease-out duration-500 hover:bg-blue-500">Academic courses</button></a>
+      <a href=""><button class="p-4 hover:text-white transform hover:scale-90 ease-out duration-500 hover:bg-blue-500">Staff</button></a>
+      <a href=""><button class="p-4 hover:text-white transform hover:scale-90 ease-out duration-500 hover:bg-blue-500">Student clubs</button></a>
+      <a href=""><button class="p-4 hover:text-white transform hover:scale-90 ease-out duration-500 hover:bg-blue-500">Contributes</button></a>
       <form action="fetch.php" method="POST" class="flex justify-between p-2">
       
         <button class="text-lg p-4 hover:bg-blue-600">coming soon</button>
@@ -99,7 +100,7 @@
   
       <form action="index1.php" data-netlify="true" method="POST" class="flex">
         <input type="email" name="email" class="w-full py-3 px-4 outline-none focus:bg-indigo-100 rounded-l" required>
-        <button class="text-lg bg-blue-200  px-5 hover:bg-blue-600 hover:text-white">Subscribe</button>
+        <button class="text-lg bg-blue-200 transform  md:px-5 px-1 hover:bg-blue-600 hover:text-white">Subscribe</button>
   
   
       </form>
@@ -153,6 +154,13 @@
          button.addEventListener('click', () => {
          menu.classList.toggle('hidden');
          });
+
+      const butto = document.getElementById('exit');
+      // const menu = document.querySelector('#menu');
+
+         butto.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+         })
 
       //Language select button
       const button2 = document.querySelector('#slang'); // Hamburger Icon
