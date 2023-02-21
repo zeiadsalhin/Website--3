@@ -19,6 +19,9 @@
   </style-->
 </head>
 <body>
+
+  <div class="spin-wrapper w-screen h-screen flex justify-center items-center bg-blue-200"><img class="animate-pulse" src="logo.jpeg" width="50"></div>
+
  <!--Top-->
  <div style="background: url('sbg.jpeg'); background-repeat: no-repeat; background-position-x: center; position: relative;">
  <nav class=" p-4 justify-between font-semibold ">
@@ -42,7 +45,7 @@
  </nav>
 
  <!--nav desktop-->
-<nav class=" hiddenm fixed top-0 right-1">
+<nav  class=" hiddenm fixed top-0 right-1">
   <div class="flex mt-2 px-2 bg-gray-200  rounded p-1" id="#menu">
     <a href="us.html" class="block mr-2 hover:bg-blue-500 hover:text-white p-2">My UNI Account</a>
     <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
@@ -50,7 +53,7 @@
         <div class="hidden" id="lang"><a href="" class="inline-block mr-2 hover:bg-blue-500 hover:text-white px-4 py-2">عربي</a></div>
     <a href="contact.html" class="block mr-2 hover:bg-blue-500 hover:text-white p-2">Contact</a>
     <button onclick="javascript:showPopupSmart52785(true);" type="button" class="block px-2 hover:bg-blue-500 hover:text-white transform hover:rotate-12 ease-in-out duration-500">Coming soon</button>
- </nav>
+  </nav>
  <!--end-->
  <nav class="hidden hover:text-white">
  
@@ -135,6 +138,7 @@
   </div>
   </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script>
      //menu button click 
     //  const el = document.getElementById('menub');
@@ -176,6 +180,11 @@
       //    button3.addEventListener('click', () => {
       //    menu3.classList.toggle('hidden',);
       //    });
+    
+
+      $(window).on('load', function(){
+        $('.spin-wrapper').fadeOut(900);
+      });
     </script>
     <!--endnav-->
     <!--loadmsg-->
