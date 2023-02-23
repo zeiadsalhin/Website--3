@@ -32,8 +32,8 @@
       
   </div>
   <div class="flex justify-between p-1">`
-      <div class="hidden transition ease-in duration-500 absolute right-4 top-5 z-0 mt-2 px-2 bg-gray-200 rounded p-1" id="menu">
-        <i id="exit" class="fa-solid fa-x fa-lg absolute right-0.5 top-2.5"></i>
+      <div class="hidden transition ease-in duration-500 absolute right-4 top-5 z-0 mt-2 px-4 bg-gray-200 rounded p-1" id="menu">
+        <i id="exit" class="p-2 fa-solid fa-x fa-lg absolute right-0.5 top-2.5"></i>
         <a href="us.html" class="block mr-2 hover:bg-blue-500 p-2">My UNI Account</a>
         <a href="http://arts.helwan.edu.eg/portal/category/recent-news/" class="block mr-2  hover:bg-blue-500 p-2  hover:text-white">News</a>
         <a href="#" class="block mr-2 hover:bg-blue-500 p-2" onclick="buttonar" id="slang">Language</a>
@@ -66,7 +66,7 @@
 
 <!--empty-->
 <div class=" p-1">
-  <div class="bg-blue-200 p-4 justify-center">
+  <div class="bg-gradient-to-r from-blue-200 to-blue-500 p-4 justify-center welcome hidden">
     <p class="font-bold text-xl text-blue-900">Welcome</p><p style="display: inline;" class="text-xl text-blue-900">to Helwan University</p> <p style="display: inline;" class="font-thin text-xl text-blue-900">website!</p>
     
   </div>
@@ -184,6 +184,9 @@
 
       $(window).on('load', function(){
         $('.spin-wrapper').fadeOut(900);
+      });
+      $(window).on('load', function(){
+        $('.welcome').fadeIn(2000);
       });
     </script>
     <!--endnav-->
