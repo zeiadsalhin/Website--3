@@ -19,6 +19,7 @@
     </style>
 </head>
 <body>
+  <div class="spin-wrapper w-screen h-screen flex justify-center items-center bg-blue-200"><img class="animate-pulse" src="logo.jpeg" width="50"></div>
     <div class="px-2 py-4"><button class="flex justify-between p-3 font-light hover:bg-blue-600  bg-blue-500"><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back</a></button></div>
     <!--Content-->
     <!--form-->
@@ -40,5 +41,10 @@
         
           </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+         <script> $(window).on('load', function(){
+        $('.spin-wrapper').fadeOut(900)});
+        </script>
+
 </body>
 </html>
