@@ -68,7 +68,7 @@
 .blur {
 width:100%;
 height:100%;
-background-size:cover;
+background-size:auto;
 -webkit-filter: blur(4px);
 -moz-filter: blur(4px);
 -ms-filter: blur(4px);
@@ -76,9 +76,21 @@ background-size:cover;
 filter: blur(4px);
 }
 
+.overlay {
+    position:absolute;
+    /* color with alpha transparency */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* stretch to screen edges */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
   </style>
 </head>
 <body>
+  <div class="body">
 
   <div class="spin-wrapper w-screen h-screen flex justify-center items-center bg-blue-200"><img class="animate-pulse" src="logo.jpeg" width="50"></div>
 
@@ -88,10 +100,10 @@ filter: blur(4px);
  
   <div class="flex justify-between">
     <img src="logo.jpeg" width="60" class="justify-between" alt="logo">
-    <button id="menub" class=" md:hidden justify-between "><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
+    <button id="menub" class="menubb md:hidden justify-between "><img src="https://cdn4.iconfinder.com/data/icons/fluent-outline-20px-vol-4/20/ic_fluent_line_horizontal_3_20_regular-256.png" width="50"></button>
       
   </div>
-  <div class="flex justify-between p-1">`
+  <div class=" flex justify-between p-1">`
       <div class="hidden p-5 transition ease-in duration-500 absolute right-4 top-5 z-0 mt-2 px-4 bg-gray-200 rounded p" id="menu">
         <i id="exit" class="p-2 fa-solid fa-x fa-lg absolute right-0.5 top-2.5"></i>
         <a href="us.html" class="block mr-2 hover:bg-blue-500 p-2">My UNI Account</a>
@@ -130,11 +142,11 @@ filter: blur(4px);
     <p class="font-bold text-xl text-blue-900">Welcome</p><p style="display: inline;" class="label text-xl text-blue-900">to Helwan University</p> <p style="display: inline;" class="font-thin text-xl text-blue-900">website!</p>
     
   </div>
-  <div class=" justify-center mt-4">
+  <div class=" justify-center mt-10 max-h-96 bg-gray-400">
 
     <div class="flex justify-center">
-      <div class="absolute">
-      <img class="md:flex justify-around hiddenm:absolute mb-20   hiddem:left-0" name="slide" width="800" height="200" alt="">
+      <div class="absolute ">
+      <img class="flex justify-center max-h-96 hiddenm:absolute p-4 hiddem:left-0" name="slide" width="800" height="200" alt="">
       </div>
       
       <!-- <div class=""><button class="bg-white" onclick="changeimage()">Next</button></div> -->
@@ -217,6 +229,7 @@ filter: blur(4px);
   </div>
   </div>
   </div>
+</div>
   <script src="jquery.js"></script></script>
     <script>
      //menu button click 
@@ -259,6 +272,10 @@ filter: blur(4px);
       //    button3.addEventListener('click', () => {
       //    menu3.classList.toggle('hidden',);
       //    });
+
+//       $("#menub").click(function () {
+//   $("body").toggleClass("blur");
+// });
     
 
       $(window).on('load', function(){
