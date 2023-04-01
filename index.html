@@ -33,6 +33,7 @@
 
 * {
    font-family: myFirstFont;
+   overflow-x: hidden;
 } 
 
 .black {
@@ -64,6 +65,18 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #4a504c; 
 }
+
+.blur {
+width:100%;
+height:100%;
+background-size:cover;
+-webkit-filter: blur(4px);
+-moz-filter: blur(4px);
+-ms-filter: blur(4px);
+-o-filter: blur(4px);
+filter: blur(4px);
+}
+
   </style>
 </head>
 <body>
@@ -118,7 +131,19 @@
     <p class="font-bold text-xl text-blue-900">Welcome</p><p style="display: inline;" class="label text-xl text-blue-900">to Helwan University</p> <p style="display: inline;" class="font-thin text-xl text-blue-900">website!</p>
     
   </div>
-  <div class="py-20">.</div>
+  <div class=" justify-center mt-4">
+
+    <div class="flex justify-center">
+      <div class="absolute">
+      <img class="md:flex justify-around hiddenm:absolute mb-20   hiddem:left-0" name="slide" width="800" height="200" alt="">
+      </div>
+      
+      <!-- <div class=""><button class="bg-white" onclick="changeimage()">Next</button></div> -->
+    
+    </div> 
+    <div class="py-20">.</div>
+    <div class="py-20">.</div>
+  </div>
   <div class="py-20">.</div>
   <div class="py-20">.</div>
   <!--panel--> 
