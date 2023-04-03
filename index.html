@@ -106,6 +106,17 @@ filter: blur(4px);
   transition: 0.3s;
  }
 
+ .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s;
+ }
+ .reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+ }
+
   </style>
 </head>
 <body>
@@ -156,12 +167,12 @@ filter: blur(4px);
  </nav-->
 
 <!--empty-->
-<div class=" p-1">
+<div class="reveal p-1">
   <div class="bg-gradient-to-r from-blue-200 to-blue-500 p-4 justify-center welcome hidden">
     <p class="font-bold text-xl text-blue-900">Welcome</p><p style="display: inline;" class="label text-xl text-blue-900">to Helwan University</p> <p style="display: inline;" class="font-thin text-xl text-blue-900">website!</p>
     
   </div>
-  <div class=" justify-center mt-10 max-h-96 bg-gray-400">
+  <div class="reveal justify-center mt-10 max-h-96 bg-gray-400">
 
     <div class="flex justify-center">
       <div class="">
@@ -179,7 +190,7 @@ filter: blur(4px);
   <div class="py-20">.</div>
   <!--panel--> 
  <!--footer-->
- <section class="bg-blue-200">
+ <section class="reveal bg-blue-200">
 
   <nav class="flex justify-between p-4">
     <h1 class="text-lg font-mono"></h1>
@@ -199,7 +210,7 @@ filter: blur(4px);
 </section>
  
  <!--footer-->
-<div class=" bg-blue-500">
+<div class=" revealsss bg-blue-500">
   <div class="p-10 font-semibold flex justify-between ">
     <!--left-->
     <div class="md:w-1/2">
